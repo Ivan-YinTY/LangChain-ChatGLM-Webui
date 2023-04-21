@@ -259,4 +259,4 @@ if __name__ == "__main__":
         3. 请勿上传或输入敏感内容，否则输出内容将被平台拦截返回error.<br>
         4. 有任何使用问题，请通过[问题交流区](https://modelscope.cn/studios/thomas/ChatYuan-test/comment)或[Github Issue区](https://github.com/thomas-yanxin/LangChain-ChatGLM-Webui/issues)进行反馈. <br>
         """)
-    demo.queue().launch(server_name='0.0.0.0', share=False)
+    demo.queue(concurrency_count=3, status_update_rate=100).launch(server_name='0.0.0.0',server_port=7860,show_api=False,share=True,inbrowser=False)
