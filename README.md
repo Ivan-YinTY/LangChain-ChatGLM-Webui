@@ -1,14 +1,27 @@
 <img src='./img/bg.jpg'>
  <p align="center">
   <a href="https://github.com/thomas-yanxin/LangChain-ChatGLM-Webui"><img src="https://img.shields.io/badge/GitHub-24292e" alt="github"></a>
+  <a href="https://huggingface.co/spaces/thomas-yanxin/LangChain-ChatLLM"><img src="https://img.shields.io/badge/HuggingFace-yellow" alt="HuggingFace"></a>
   <a href="https://modelscope.cn/studios/AI-ModelScope/LangChain-ChatLLM/summary"><img src="https://img.shields.io/badge/ModelScope-blueviolet" alt="modelscope"></a>
   <a href="https://openi.pcl.ac.cn/Learning-Develop-Union/LangChain-ChatGLM-Webui"><img src="https://img.shields.io/badge/-OpenI-337AFF" alt="OpenI"></a>
-   <a href="https://www.bilibili.com/video/BV1So4y1L7Hb/?share_source=copy_web&vd_source=8162f92b2a1a94035ca9e4e0f6e1860a"><img src="https://img.shields.io/badge/-bilibili-ff69b4" alt="bilibili"></a>
+   <a href="https://www.bilibili.com/video/BV1So4y1L7Hb/?share_source=copy_web&vd_source=8162f92b2a1a94035ca9e4e0f6e1860a"><img src="https://img.shields.io/badge/-bilibili-ff69b4" alt="bilibili"></a> 
+</p> 
+<p align="center">
+<a href="https://github.com/thomas-yanxin/LangChain-ChatGLM-Webui/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/thomas-yanxin/LangChain-ChatGLM-Webui?color=brightgreen" /></a>
+<a href="https://github.com/thomas-yanxin/LangChain-ChatGLM-Webui/graphs/contributors">
+<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/thomas-yanxin/LangChain-ChatGLM-Webui" />
+</a>
+<a href="https://github.com/thomas-yanxin/LangChain-ChatGLM-Webui/issues"><img alt="Issues" src="https://img.shields.io/github/issues/thomas-yanxin/LangChain-ChatGLM-Webui?color=0088ff" /></a>
+<a href="https://github.com/thomas-yanxin/LangChain-ChatGLM-Webui/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/thomas-yanxin/LangChain-ChatGLM-Webui?color=orange" /></a>
+</p>
+<p align="center">  
+   <a href="https://www.bilibili.com/video/BV1No4y1b7eu/"><strong>视频教程</strong></a> | <a href="https://huggingface.co/spaces/thomas-yanxin/LangChain-ChatLLM"><strong>在线体验</strong></a> | <a href="https://github.com/thomas-yanxin/LangChain-ChatGLM-Webui/blob/master/docs/update_history.md"><strong>更新日志</strong></a> 
+
 </p>
 
 ## 🔥项目体验
 
-本项目提供基于ModelScope魔搭社区的[在线体验](https://modelscope.cn/studios/AI-ModelScope/LangChain-ChatLLM/summary), 欢迎尝试和反馈!
+本项目提供基于[HuggingFace社区](https://huggingface.co/spaces/thomas-yanxin/LangChain-ChatLLM)和[ModelScope魔搭社区](https://modelscope.cn/studios/AI-ModelScope/LangChain-ChatLLM/summary)的在线体验, 欢迎尝试和反馈!  
 
 ## 👏项目介绍
 
@@ -17,14 +30,13 @@
 目前支持上传 txt、docx、md、pdf等文本格式文件, 提供包括ChatGLM-6B系列的模型文件以及[GanymedeNil/text2vec-large-chinese](https://huggingface.co/GanymedeNil/text2vec-large-chinese)、[nghuyong/ernie-3.0-base-zh](https://huggingface.co/nghuyong/ernie-3.0-base-zh)、[nghuyong/ernie-3.0-nano-zh](https://huggingface.co/nghuyong/ernie-3.0-nano-zh)等Embedding模型.
 
 效果如下:
-![](./img/demo_new.jpg)
+![](./img/demo_hf.jpg)
 ![](./img/demo_ms.jpg)
 
 ## 🚀使用方式
 
 提供ModelScope版本和HuggingFace版本.  
 **需要Python>=3.8.1**  
-docker镜像: `dockerhub.pcl.ac.cn:5000/user-images/openi:LangChain_ChatLLM`
 
 ### 使用步骤
 
@@ -52,6 +64,8 @@ docker镜像: `dockerhub.pcl.ac.cn:5000/user-images/openi:LangChain_ChatLLM`
 | [ChatGLM-6B-int8](https://s3.openi.org.cn/opendata/attachment/3/a/3aad10d1-ac8e-48f8-ac5f-cea8b54cf41b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=1fa9e58b6899afd26dd3%2F20230416%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230416T032447Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22chatglm-6b-int8.zip%22&X-Amz-Signature=d58c08158ef8550719f934916fe4b6afe67220a9b84036f660e952c07b8b44f6) | [ernie-3.0-base-zh](https://s3.openi.org.cn/opendata/attachment/7/3/733fe6e4-2c29-46d8-93e8-6be16194a204?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=1fa9e58b6899afd26dd3%2F20230416%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230416T044454Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22ernie-3.0-base-zh.zip%22&X-Amz-Signature=554428b51410671dfc5dd6c928cb3e1291b0235abf7e418894bd4d5ac218123e) |
 | [ChatGLM-6B-int4](https://s3.openi.org.cn/opendata/attachment/b/2/b2c7f23f-6864-40da-9c81-2c0607cb1d02?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=1fa9e58b6899afd26dd3%2F20230415%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230415T155352Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22chatglm-6b-int4.zip%22&X-Amz-Signature=0488bd8a55e0b52c846630d609e68d2fa05bd0f0b057059f4f94133a17fbd35b) | [ernie-3.0-nano-zh](https://s3.openi.org.cn/opendata/attachment/2/2/22833889-1683-422e-a44c-929bc379904c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=1fa9e58b6899afd26dd3%2F20230416%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230416T044402Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22ernie-3.0-nano-zh.zip%22&X-Amz-Signature=6599e60b224d0fc05d13dac7a3648f24c2cba0462f39220142cb91923cfdc3c5) |
 | [ChatGLM-6B-int4-qe](https://s3.openi.org.cn/opendata/attachment/b/f/bf5131da-62e0-4b57-b52a-4135c273b4fc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=1fa9e58b6899afd26dd3%2F20230416%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230416T051728Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22chatglm-6b-int4-qe.zip%22&X-Amz-Signature=9a137b222f4e0b39c369966c1c1c1d02712728d06185e4e6501a4ae22566c3dc) | [ernie-3.0-xbase-zh](https://s3.openi.org.cn/opendata/attachment/c/5/c5f746c3-4c60-4fb7-8424-8f7e40f3cce8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=1fa9e58b6899afd26dd3%2F20230416%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230416T063343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22ernie-3.0-xbase-zh.zip%22&X-Amz-Signature=f2e153cb75ea2dd520b03be88a2e50922c6ca8b86281ebb0b207a9a83254a016) | 
+| [Vicuna-7b-1.1](https://s3.openi.org.cn/opendata/attachment/2/5/25854cfb-3d57-44ff-a842-2a98e1a2dafe?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=1fa9e58b6899afd26dd3%2F20230421%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230421T110022Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22vicuna-7b-1.1.zip%22&X-Amz-Signature=c0fc5e9cbc48194ffa38d9d87cd2c476230c6536440d3daf961384b4f7f25871) | | 
+| [BELLE-LLaMA-7B-2M.zip](https://s3.openi.org.cn/opendata/attachment/2/6/26f570ea-03c8-4e48-8058-e90b4854edfb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=1fa9e58b6899afd26dd3%2F20230422%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230422T092629Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22BELLE-LLaMA-7B-2M.zip%22&X-Amz-Signature=c8a3f1c6afe3735134b39c7267a55cfe02ec33121307b7f27867576ea0cd85ae) | | 
 | Minimax | |
 
 ## 💪更新日志
@@ -72,3 +86,7 @@ docker镜像: `dockerhub.pcl.ac.cn:5000/user-images/openi:LangChain_ChatLLM`
 2. [魔搭ModelScope](https://modelscope.cn/home)提供展示空间
 3. [OpenI启智社区](https://openi.pcl.ac.cn/)提供调试算力
 4. [@online2311](https://github.com/online2311)进行[多卡测试](https://github.com/thomas-yanxin/LangChain-ChatGLM-Webui/issues/4)、[增加外部访问支持、增加ChatGLM-6b-local 本地模型读取路径、修复text2vec 无法加载的错误、增加 Dockerfile、增加Docker 使用说明](https://github.com/thomas-yanxin/LangChain-ChatGLM-Webui/pull/6)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=thomas-yanxin/LangChain-ChatGLM-Webui&type=Date)](https://star-history.com/#thomas-yanxin/LangChain-ChatGLM-Webui&Date)

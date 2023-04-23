@@ -1,5 +1,9 @@
 langchain
-transformers==4.27.1
+fschat
+accelerate
+duckduckgo_search
+git+https://github.com/huggingface/transformers
+tokenizers>=0.13.3
 unstructured[local-inference]
 layoutparser[layoutmodels,tesseract]
 nltk
